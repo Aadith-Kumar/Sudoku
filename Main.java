@@ -16,11 +16,11 @@ class Main{
                 
                 boolean anotherPoss = false; //Checks if there is another possible cell for given number n;
                 //Checking if the current cell is the only possible cell in the sub-box for the given number n
-                for(int i = diagX; i < diagX + 3; i ++){
+                outer: for(int i = diagX; i < diagX + 3; i ++){
                     for (int j = diagY; j < diagY + 3; j++){
-                       if ((i!=x) && (j!=y) && (sud[i][j][n] == 0)){
+                       if (((i!=x) || (j!=y)) && (sud[i][j][n] == 0)){
                           anotherPoss = true;
-                          break;                          
+                          break outer;                          
                        }
                     }
                 }               
@@ -29,11 +29,7 @@ class Main{
                 anotherPoss = false;
                 //Checking if the current cell is the only possible cell for number n in the concerned row
                 for(int i = 0; i < 9; i++){
-                    if (i == diagY){
-                        i = i + 2;
-                        if (i >= 9) break;                        
-                    }
-                    else if (sud[x][i][n] == 0){
+                    if (sud[x][i][n] == 0 && (i!=y)){
                         anotherPoss = true;
                         break;
                     }                    
@@ -43,11 +39,7 @@ class Main{
                 anotherPoss = false;
                 //Checking if the current cell is the only possible cell for number n in the concerned coloumn
                 for(int i = 0; i < 9; i++){
-                    if (i == diagX){
-                        i = i + 2;
-                        if (i >= 9) break;                        
-                    }
-                    else if (sud[i][y][n] == 0){
+                    if (sud[i][y][n] == 0 && (i!=x)){
                         anotherPoss = true;
                         break;
                     }                    
@@ -161,6 +153,101 @@ class Main{
       y = 6;
       num = findPossNum(sud,x,y);
       insert(sud,x,y,num);
+      
+      x = 2; 
+      y = 8;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 7; 
+      y = 7;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 8; 
+      y = 1;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 4; 
+      y = 2;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 5; 
+      y = 5;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 1; 
+      y = 1;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 7; 
+      y = 0;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 8; 
+      y = 0;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 1; 
+      y = 2;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 0; 
+      y = 0;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 0; 
+      y = 4;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 1; 
+      y = 6;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 4; 
+      y = 6;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 3; 
+      y = 0;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 4; 
+      y = 0;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 5; 
+      y = 3;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+
+      x = 7; 
+      y = 4;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+
+
+
+
+
+      
+
+
+
+
       System.out.println(num);       
       printSudoku(sud);
       return sud;
