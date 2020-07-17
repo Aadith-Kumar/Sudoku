@@ -239,16 +239,171 @@ class Main{
       num = findPossNum(sud,x,y);
       insert(sud,x,y,num);
 
+      x = 8; 
+      y = 5;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
 
-
-
-
+      x = 8; 
+      y = 8;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
       
-
-
-
-
-      System.out.println(num);       
+      x = 8; 
+      y = 4;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 6; 
+      y = 7;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 7; 
+      y = 6;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 5; 
+      y = 6;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 6; 
+      y = 3;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 7; 
+      y = 2;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 6; 
+      y = 0;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 6; 
+      y = 2;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 3; 
+      y = 2;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 7; 
+      y = 3;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 7; 
+      y = 5;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 2; 
+      y = 0;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 2; 
+      y = 1;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 4; 
+      y = 4;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 1; 
+      y = 4;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 1; 
+      y = 3;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 1; 
+      y = 5;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 4; 
+      y = 3;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 3; 
+      y = 3;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 4; 
+      y = 1;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 5; 
+      y = 1;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 3; 
+      y = 1;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 4; 
+      y = 5;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 3; 
+      y = 5;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 3; 
+      y = 7;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 5; 
+      y = 7;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 4; 
+      y = 7;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 0; 
+      y = 7;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 0; 
+      y = 8;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 4; 
+      y = 8;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
+      x = 5; 
+      y = 8;
+      num = findPossNum(sud,x,y);
+      insert(sud,x,y,num);
+      
       printSudoku(sud);
       return sud;
  
